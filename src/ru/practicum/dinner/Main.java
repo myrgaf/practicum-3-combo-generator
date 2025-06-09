@@ -1,6 +1,5 @@
 package ru.practicum.dinner;
 
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -67,8 +66,8 @@ public class Main {
             nextItem = scanner.nextLine();
         }
 
-        List<List<Dish>> combinations = constructor.generateCombinations(numberOfCombos, dishTypes);
-        for (List<Dish> combination : combinations) {
+        ArrayList<ArrayList<Dish>> combinations = constructor.generateCombinations(numberOfCombos, dishTypes);
+        for (ArrayList<Dish> combination : combinations) {
             System.out.println(combination);
         }
     }
